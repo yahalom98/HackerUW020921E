@@ -1,0 +1,68 @@
+.row{
+  padding: 10px;
+  height: 60px;
+  width: 30%;
+  min-width: 300px;
+  margin: auto;
+}
+
+.pull-left{
+  float: left;
+}
+.pull-right{
+  float: right;
+}
+
+.button-container button{
+  background-color: #4C50FF;
+  color: #FFF;
+  padding: 15px 32px;
+  width: 140px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border: 2px solid #FFF;
+  border-radius: 12px;
+  outline: none;
+  -webkit-transition: color 0.4s, border 0.4s, background-color 0.4s;
+  transition: color 0.4s, border 0.4s, background-color 0.4s;
+}
+.button-container button:hover {
+  color: #4C50FF;
+  background-color: #FFF;
+  border: 2px solid #4C50FF;
+}
+.button-container button:active {
+  color: #4CAF50;
+  background-color: #FFF;
+  border: 2px solid #4CAF50;
+  -webkit-transition-duration: 0s;
+  transition-duration: 0s;
+}
+
+/* fun stuff, for when class becomes unset */
+.light-container div {
+  background-color: #AF202C;
+  color: #FFF;
+  width: 145px;
+  height: 55px;
+  text-align: center;
+  display: inline-block;
+  border-radius: 12px;
+  -webkit-transition: color 0.8s, border 0.8s, background-color 0.8s;
+  transition: color 0.8s, border 0.8s, background-color 0.8s;
+}
+.light-container div:before {
+  content: "☠️";
+}
+
+div.light-red:before,
+div.light-green:before { content: ""; }
+
+div.light-red{
+  background-color: #FF504C;
+}
+div.light-green{
+  background-color: #4CAF50;
+}
